@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Cristiancm49.github.oi/TodoItem/static/css/main.f495b401.css",
-    "main.js": "/Cristiancm49.github.oi/TodoItem/static/js/main.399efc94.js",
-    "index.html": "/Cristiancm49.github.oi/TodoItem/index.html",
-    "static/media/delete.svg": "/Cristiancm49.github.oi/TodoItem/static/media/delete.84a5e9922c58c3a9359ca15fab8db5e8.svg",
-    "static/media/check.svg": "/Cristiancm49.github.oi/TodoItem/static/media/check.23109d14544b9bb9b3d5d4e65ea13701.svg",
-    "main.f495b401.css.map": "/Cristiancm49.github.oi/TodoItem/static/css/main.f495b401.css.map",
-    "main.399efc94.js.map": "/Cristiancm49.github.oi/TodoItem/static/js/main.399efc94.js.map"
+    "main.css": "./static/css/main.f495b401.css",
+    "main.js": "./static/js/main.dcb8e5ee.js",
+    "index.html": "./index.html",
+    "static/media/delete.svg": "./static/media/delete.84a5e9922c58c3a9359ca15fab8db5e8.svg",
+    "static/media/check.svg": "./static/media/check.23109d14544b9bb9b3d5d4e65ea13701.svg",
+    "main.f495b401.css.map": "./static/css/main.f495b401.css.map",
+    "main.dcb8e5ee.js.map": "./static/js/main.dcb8e5ee.js.map"
   },
   "entrypoints": [
     "static/css/main.f495b401.css",
-    "static/js/main.399efc94.js"
+    "static/js/main.dcb8e5ee.js"
   ]
 }
