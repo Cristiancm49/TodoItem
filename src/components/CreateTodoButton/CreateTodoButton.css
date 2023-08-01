@@ -1,0 +1,68 @@
+.ContainerCreateTodoBtn {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 30px 10px;
+    border-radius: 7px;
+    
+    width: 100%;
+    height: 50vh;
+    background-image: url(/src/img/mujer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 45%;
+    background-position: 0px 108%;
+
+    background-color: white;
+    box-shadow: 0px 4px 12px 0px rgba(238, 160, 71, 0.91);
+    
+
+}
+
+.TitleCreateTask {
+    padding: 23px 16px 2px;
+    color: rgb(32, 39, 58);
+   
+}
+
+.TitleInputTask {
+    margin: 1px 15px;
+}
+
+.InputNewTodos {
+    background-color: rgb(226, 212, 212);
+    margin: 8px 9px ;
+    border-radius: 6px;
+    width: 90%;
+    height: 30px;
+    margin-top: 4px;
+    border: none;
+
+}
+
+.CreateTodoBtn {
+    cursor: pointer;
+    padding: 6px 10px;
+    color: aliceblue;
+    width: 50%;
+    margin: 1px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(37, 35, 33, 0.76);
+}
+
+.CreateTodoBtn:hover {
+    animation-name: hoverButton;
+    animation-duration: 2s;
+}
+
+@keyframes hoverButton {
+    from{
+        background-color: rgba(37, 35, 33, 0.76);
+        color: aliceblue;
+    }
+    to {
+        background-color: rgb(12, 229, 236);
+        color: black;
+    }
+    
+}

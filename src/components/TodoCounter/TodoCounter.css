@@ -1,0 +1,26 @@
+.TitleTask {
+    font-size: 5rem;
+    margin: 5px 4px 4px;
+    color: white;
+}
+
+h4 {
+    font-size: 19px;
+    padding: 5px 2px 1px;
+    color: white;
+    margin-top: 10px;
+}
+
+.InfoTaskComplete {
+    
+    color: white;
+}
+
+.ContainerTodoCounter{
+    display: flex;
+    
+}
+
+.ColorNumberTodoCounter {
+    color: orange;
+}

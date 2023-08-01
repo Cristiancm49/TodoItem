@@ -1,0 +1,28 @@
+.Icon-check-completed {
+    color: green;
+}
+
+.Icon-check {
+    font-size: 30px;
+    margin: 5px 5px 5px 15px;
+}
+
+.Icon-check:hover .Icon-svg {
+    fill: green;
+}
+
+.Icon-delete:hover .Icon-svg {
+    fill: red;
+}
+
+.Icon-delete {
+    background-size: cover;
+    position: relative;
+    top: -19px;
+    left: 2px;
+}
+
+.Icon-svg {
+    width: 24px;
+    height: 24px;
+}

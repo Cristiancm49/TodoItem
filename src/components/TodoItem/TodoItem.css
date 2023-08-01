@@ -1,0 +1,42 @@
+.Task {
+    background-color: aliceblue;
+    padding: 2px 10px;
+    border-radius: 8px;
+    box-shadow: 0px -1px 5px 0px rgba(60, 62, 66, 0.91);
+    height: 89%;
+    
+}
+
+
+
+.TextTask {
+    margin: 4px 4px;
+    display: flex;
+    justify-content: start;
+
+}
+
+/* .Task {
+    
+    width: 89%;
+    margin-top: 9px ;
+    list-style: none;
+    height: 60px;
+} */
+
+.ContainerListTask {
+    width: 89%;
+    margin-top: 9px;
+    list-style: none;
+    height: 60px;
+}
+
+.ContainerInfoTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TextTaskComplete {
+    text-decoration: line-through;
+}
