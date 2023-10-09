@@ -3,6 +3,7 @@ import { TodoCounter } from "../components/TodoCounter/TodoCounter";
 import { TodoSearch } from "../components/TodoSearch/TodoSearch";
 import { TodoList } from "../components/TodoList/TodoList";
 import { TodoItem } from "../components/TodoItem/TodoItem";
+import { TodoHeader } from "../components/TodoHeader/TodoHeader";
 import { CreateTodoButton } from "../components/CreateTodoButton/CreateTodoButton";
 import { CreateNewTodos } from "../components/CreateNewTodos/CreateNewTodos";
 import { TodosError } from "../components/TodosError/TodosError";
@@ -11,8 +12,17 @@ import { TodoContext } from "../components/TodoContext/TodoContext";
 import "./App.css";
 
 function AppUi() {
-  const { loading, error, searchedTodos, completeTodo, deleteTodo } =
-    React.useContext(TodoContext);
+  const { 
+        loading,
+        error,
+        searchedTodos,
+        completeTodo,
+        deleteTodo,
+        completedTodos,
+        totalTodos,
+        searchValue,
+        setSearchValue,
+      } = React.useContext(TodoContext);
 
   return (
     <>
@@ -25,8 +35,11 @@ function AppUi() {
           </div>
 
           <div className="ContainerTaskList">
-            <TodoCounter />
-            <TodoSearch />
+            <TodoHeader>
+              <TodoCounter completedTodos={completedTodos} totalTodos={totalTodos}/>
+              <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
+            </TodoHeader>
+
 
             <TodoList className="asd">
               
