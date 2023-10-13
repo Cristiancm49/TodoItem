@@ -1,10 +1,16 @@
+import React from 'react';
 import './TodoList.css'
 
-function TodoList ({children}) {
+function TodoList (props) {
     return (
-        <ul className="ContainerListTask">
-            {children}
-        </ul>
+        <section>
+            {props.error && props.onError()}
+
+            <ul className="ContainerListTask">
+            {props.children}
+            </ul>
+        </section>
+
     );
   }
 

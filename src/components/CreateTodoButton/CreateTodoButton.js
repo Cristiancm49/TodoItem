@@ -1,13 +1,9 @@
 import React from 'react';
 import './CreateTodoButton.css'
-import { TodoContext } from '../TodoContext/TodoContext'
 
 
-function CreateTodoButton () {
 
-    const { addTodo } = React.useContext(TodoContext);
-
-    const [newTodoValue, setNewTodoValue] = React.useState(''); 
+function CreateTodoButton ({ addTodo, newTodoValue, setNewTodoValue }) {
 
     const onSubmit = (event) => { 
         event.preventDefault()

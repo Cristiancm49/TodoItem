@@ -2,10 +2,7 @@ import React from "react";
 import { useLocalStorage } from "./UseLocalStorage";
 
 
-const TodoContext = React.createContext();
-
-
-function TodoProvider({ children }){
+function useTodos(){
 
     const {
         item: todos, 
@@ -18,10 +15,20 @@ function TodoProvider({ children }){
       const completedTodos = todos.filter((todo) => !!todo.completed).length;
     
       const totalTodos = todos.length;
-      
-      const searchedTodos = todos.filter((todo) =>
-        todo.text.toLowerCase().includes(searchValue.toLocaleLowerCase())
-      );
+
+      let searchedTodos = [];
+
+      if (!searchValue.length >= 1) {
+        searchedTodos = todos;
+      } else {
+        searchedTodos = todos.filter(todo => {
+          const todoText = todo.text.toLowerCase();
+          const searchText = searchValue.toLowerCase();
+          return todoText.includes(searchText);
+        });
+      }
+
+
 
       const addTodo = (text) => {
         const newTodos = [...todos];
@@ -48,9 +55,7 @@ function TodoProvider({ children }){
     
 
 
-    return (
-        <TodoContext.Provider value={
-          {
+    return {
             loading,
             error,
             completedTodos,
@@ -61,11 +66,7 @@ function TodoProvider({ children }){
             completeTodo,
             deleteTodo,
             addTodo,
-          }
-        }>
-         { children }
-        </TodoContext.Provider>
-    );
+          };
 }
 
-export { TodoContext, TodoProvider };
+export { useTodos };
